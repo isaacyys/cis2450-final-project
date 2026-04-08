@@ -1,0 +1,41 @@
+## To use this repo you must install GIT LFS
+
+This repository uses **Git Large File Storage (LFS)** to manage the DuckDB database instance (`.db`) and large CSV datasets. Standard Git commands will only download "pointer files" (1KB text files) instead of the actual data.
+
+### 1. Installation
+If you haven't installed Git LFS yet, use the following commands based on your OS:
+
+* **macOS:** `brew install git-lfs`
+* **Linux:** `sudo apt-get install git-lfs` or `yum install git-lfs`
+* **Windows:** Download and run the installer from [git-lfs.github.com](https://git-lfs.github.com/).
+
+### 2. Setup
+After installation, initialize Git LFS on your system:
+```bash
+git lfs install
+```
+
+### 3. Accessing the Data
+Once LFS is installed and initialized, you can pull the actual DuckDB and CSV files into your local directory:
+
+```bash
+# If you have already cloned the repo
+git lfs pull
+
+# If you are cloning for the first time
+git clone <repository-url>
+```
+
+### 4. Verification
+To verify that the large files were downloaded correctly and are not just pointers, you can run:
+```bash
+git lfs ls-files
+```
+The output should list your `.db` and `.csv` files. If the files in your project directory are only a few hundred bytes, the `git lfs pull` command was not successful.
+
+---
+
+## 📂 Project Structure
+* `weather.db`: The DuckDB database instance containing cleaned weather data.
+* `data/`: Directory containing raw and cleaned `.csv` source files.
+* `notebooks/`: `.ipynb` files for data exploration and visualization.
