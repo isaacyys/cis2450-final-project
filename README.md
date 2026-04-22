@@ -36,6 +36,14 @@ The output should list your `.db` and `.csv` files. If the files in your project
 ---
 
 ## 📂 Project Structure
-* `weather.db`: The DuckDB database instance containing cleaned weather data.
-* `data/`: Directory containing raw and cleaned `.csv` source files.
-* `notebooks/`: `.ipynb` files for data exploration and visualization.
+- `client/`: Frontend app source and build assets.
+- `server/`: Backend API and prediction endpoints.
+- `models/`: Trained model artifacts and modeling notebooks.
+- `*.duckdb`, `*.csv`, `*.ipynb`: Local datasets and analysis notebooks at repo root.
+
+### Important Components
+- `server/server.js`: Main backend entry point.
+- `server/routes.js`: Main API route handlers for analytics queries and delay prediction endpoints.
+- `server/predictor.py`: Python inference logic used by prediction routes.
+- `client/src/pages/`: Primary UI pages (`AirlineStatistics`, `AirportStatistics`, `RouteStatistics`, `DelayPrediction`).
+- `catboost_model.bin`: Primary trained model file used for predictions.
