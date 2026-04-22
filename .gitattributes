@@ -1,2 +1,10 @@
 *.duckdb filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+weather_data.duckdb filter=lfs diff=lfs merge=lfs -text
+temp_weather_data.csv filter=lfs diff=lfs merge=lfs -text
+temp_flights.csv filter=lfs diff=lfs merge=lfs -text
+flight_data.duckdb filter=lfs diff=lfs merge=lfs -text
+catboost_model.bin filter=lfs diff=lfs merge=lfs -text
+airport_ID_mapping.csv filter=lfs diff=lfs merge=lfs -text
+airline_ID_mapping.csv filter=lfs diff=lfs merge=lfs -text
