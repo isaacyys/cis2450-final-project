@@ -36,8 +36,8 @@ The output should list your `.db` and `.csv` files. If the files in your project
 ---
 
 ## 📂 Project Structure
-- `client/`: Frontend app source and build assets. To start the frontend, change directory to client and use npm start to begin the frontend. Using the frontend requires the backend to be active.
-- `server/`: Backend API and prediction endpoints. To start the backend, change directory to server and use node server.js to start the backend. DuckDB only allows for one backend server running at one time, so please follow the warning messages if the backend fails to start to kill existing DuckDB processes.
+- `client/`: Frontend app source and build assets. To start the frontend, change directory to client and use `npm start` to begin the frontend. Using the frontend requires the backend to be active.
+- `server/`: Backend API and prediction endpoints. To start the backend, change directory to server and use `node server.js` to start the backend. DuckDB only allows for one backend server running at one time, so please follow the warning messages if the backend fails to start to kill existing DuckDB processes.
 - `models/`: Trained model artifacts and modeling notebooks.
 - `*.duckdb`, `*.csv`, `*.ipynb`: Local datasets and analysis notebooks at repo root.
 
